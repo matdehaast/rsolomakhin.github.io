@@ -111,8 +111,8 @@ function install() {
             registration.paymentManager.instruments
                 .set('instrument-key', {
                     name: 'Chrome uses name and icon from the web app manifest',
-                    enabledMethods: ['https://openpayments.dev/pay'],
-                    method: 'https://openpayments.dev/pay',
+                    enabledMethods: ['https://openpayments.dev'],
+                    method: 'https://openpayments.dev',
                 })
                 .then(() => {
                     registration.paymentManager.instruments.get('instrument-key').then((instrument) => {

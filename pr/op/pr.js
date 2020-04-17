@@ -8,7 +8,13 @@ function buildPaymentRequest() {
   }
 
   const supportedInstruments = [{
-    supportedMethods: 'https://openpayments.dev/pay'
+    supportedMethods: 'https://openpayments.dev',
+    details: {
+      invoice: {
+        id: '123',
+        description: 'Test description'
+      }
+    }
   }
   ];
 
